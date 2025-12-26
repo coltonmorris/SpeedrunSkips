@@ -1,0 +1,15 @@
+## Interface: 11508
+## Title: SpeedrunSkips
+## Notes: Predict spirit healer graveyard from AreaID + graveyard_zone + WorldSafeLocs
+## Author: colton
+## Version: 0.1
+
+GraveyardWhere.lua
+
+Data/graveyard_data.lua
+Data/AreaInfo.lua
+Data/AreaHierarchy.lua
+Data/MapToArea.lua
+Data/Kalimdor_tiles.lua
+Data/Azeroth_tiles.lua
+
