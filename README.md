@@ -7,13 +7,13 @@ Uses the Unstuck Character tool made by Blizzard: https://us.support.blizzard.co
 You are teleported to the nearest `Safe Location`. It does not matter if this `Safe Location` is across zones.
 
 `Safe Locations` can be:
-    - graveyards
-    - instance portals
-    - `SoD` instance portals 
-        * yes, even though they were made for `SoD`, they exist in classic era now, it is just invisible spaghetti
-    - `SoD` graveyards 
-        * yes, more spaghetti
-    - other arbitrary locations
+- graveyards
+- instance portals
+- `SoD` instance portals 
+    * yes, even though they were made for `SoD`, they exist in classic era now, it is just invisible spaghetti
+- `SoD` graveyards 
+    * yes, more spaghetti
+- other arbitrary locations
 
 ## Death Skips Mechanics
 there is a server side table called `game_graveyard_zone` that maps the `area-id` you died in to one or more eligible graveyards. If there are multiple eligible graveyards, it picks the closest one. If there was no eligible graveyard, it traverses up your parent zone heirarchy checking each area/zone until it finds an eligible graveyard  
@@ -53,45 +53,63 @@ cargo run
 
 ### Resources
 `adt` files:
-    - these are WoW client game files that segment the entire world into small `chunks`, and each `chunk` is assigned an `area-id`
-        - depending on what `chunk` your character is standing in will determine what area/zone appears above your minimap
-        - a `chunk` is 33 yards wide. to give an idea, it takes around 5 seconds to run that length
-    - grabbed from a `v1.12` private server's game client and used an extractor tool to get them https://github.com/Kruithne/wow.export
-        - modern WoW uses the `CASC` format, and older private servers use the `MPQ` format
-            - we had a hard time getting them from the modern game client, so we used the older private servers, but they should be the same
-
-`UiMap.1.15.8.64907.csv`:
-    - used to coorelate `map-id`s to `area-id`s
-        - when a the world map is open the `map-id` tells us what zone it is looking at
-    - downloaded from https://wago.tools/db2/UiMap?build=1.15.8.64907
-    
-`WorldSafeLocs.csv`:
-    - used to get the `graveyard-id`s for various locations
-        - `graveyard-id`s are used for deathskips
-            - a given `area-id` (AKA a zone) is assigned a `graveyard-id` which allows a player to spawn at the given graveyard when they die
-    - grabbed from a `v1.12` wow clients encoded game files
-        - use an MPQ viewer to find the file: https://github.com/Kruithne/wow.export
-        - is going to have inconsistencies compared to the current `v1.15x` version of classic WoW
-
-`unstucks.json`:
-    - a list of non-graveyard locations that count as elligible locations where the Unstuck tool can teleport you to
-    - grabbed from the `LogoutSkips` addon https://github.com/aaronma37/LogoutSkips
-        - is originally `v1.12`, but community efforts in @Kamisayo's discord has updated it with additional `v1.15x` locations
-
-`gyClassic.json`:
-    - a list of graveyard locations that count as elligible locations where you can spawn at after dying
-    - grabbed from the `LogoutSkips` addon https://github.com/aaronma37/LogoutSkips
-        - is originally `v1.12`, but community efforts in @Kamisayo's discord has updated it with additional `v1.15x` locations
+- these are WoW client game files that segment the entire world into small `chunks`, and each `chunk` is assigned an `area-id`
+    - depending on what `chunk` your character is standing in will determine what area/zone appears above your minimap
+    - a `chunk` is 33 yards wide. to give an idea, it takes around 5 seconds to run that length
+- grabbed from a `v1.12` private server's game client and used an extractor tool to get them https://github.com/Kruithne/wow.export
+    - modern WoW uses the `CASC` format, and older private servers use the `MPQ` format
+        - we had a hard time getting them from the modern game client, so we used the older private servers, but they should be the same
 
 `AreaTable.1.15.8.64097.csv`:
-    - used to know the `area-id` (AKA zone) hierarchy (Valley of Trials is a child to Durotar)
-    - used to know if a zone gives discovery xp by reading the `ExplorationLevel` value
-    - downloaded from https://wago.tools/db2/AreaTable?build=1.15.8.64907
+- used to know the `area-id` (AKA zone) hierarchy (Valley of Trials is a child to Durotar)
+- used to know if a zone gives discovery xp by reading the `ExplorationLevel` value
+- downloaded from https://wago.tools/db2/AreaTable?build=1.15.8.64907
+
+`UiMap.1.15.8.64907.csv`:
+- lists all of the different maps and their `map-id`s
+    - when the world map is open the `map-id` indicates what zone it is looking at
+- downloaded from https://wago.tools/db2/UiMap?build=1.15.8.64907
+
+`mapIdToArea.csv`:
+- combined `UiMap.1.15.8.64907.csv` and `AreaTable.1.15.8.64097.csv` by hand to neatly coorelate `area-id`s to `map-id`s
+    - we use this so that when we open the map we only have to draw the zones that are within that map (saves resources)
+
+`WorldSafeLocs.csv`:
+- used to get the `graveyard-id`s for various locations
+    - `graveyard-id`s are used for deathskips
+        - a given `area-id` (AKA a zone) is assigned a `graveyard-id` which allows a player to spawn at the given graveyard when they die
+- grabbed from a `v1.12` wow clients encoded game files
+    - use an MPQ viewer to find the file: https://github.com/Kruithne/wow.export
+    - is going to have inconsistencies compared to the current `v1.15x` version of classic WoW
+
+`unstucks.json`:
+- a list of non-graveyard locations that count as elligible locations where the Unstuck tool can teleport you to
+- grabbed from the `LogoutSkips` addon https://github.com/aaronma37/LogoutSkips
+    - is originally `v1.12`, but community efforts in @Kamisayo's discord has updated it with additional `v1.15x` locations
+
+`gyClassic.json`:
+- a list of graveyard locations that count as elligible locations where you can spawn at after dying
+- grabbed from the `LogoutSkips` addon https://github.com/aaronma37/LogoutSkips
+    - is originally `v1.12`, but community efforts in @Kamisayo's discord has updated it with additional `v1.15x` locations
 
 `game_graveyard_zone.sql`:
-    - a collection of sql migrations for the `game_graveyard_zone` table that the `vmangos` team have implemented that assign `graveyard-id`s to `area-id`s
-    - grabbed from the various migrations in https://github.com/vmangos/core/tree/development/sql
+- a collection of sql migrations for the `game_graveyard_zone` table that the `vmangos` team have implemented that assign `graveyard-id`s to `area-id`s
+- grabbed from the various migrations in https://github.com/vmangos/core/tree/development/sql
 
 `db_dump.sql`:
-    - the resulting `game_graveyard_zone` sql table after the various migrations have been ran, resulting in the complete set of `graveyard-id`s to `area-id`s coorelations
-    - grabbed from github actions that the vmangos team automatically runs (the `snapshot-db-dump`, not the `snapshot-db-sqlite-dump`) https://github.com/vmangos/core/actions/runs/20448867445
+- the resulting `game_graveyard_zone` sql table after the various migrations have been ran, resulting in the complete set of `graveyard-id`s to `area-id`s coorelations
+- grabbed from github actions that the vmangos team automatically runs (the `snapshot-db-dump`, not the `snapshot-db-sqlite-dump`) https://github.com/vmangos/core/actions/runs/20448867445
+
+
+TODO
+    combine worldsafeLocs.csv into the unstucks.json and gyclassic.json
+        OR we prune them?
+        have to invent our own graveyard-ids for the unstucks and gyclassics?
+    compare db_dump.sql
+        does it have every parent zone in it?
+        does it have the starting zones rules in it?
+        are there graveyard-ids that dont exist in worldSafeLocs.csv?
+        are there worldSafeLocs that arent shown in the graveyard table?
+    in the end, we should update our `AreaInfo.lua` file to have each area include info about which graveyards it applies to
+        should do some processing on the resulting file and see if there are any areas that dont have `graveyard-ids`
+    
