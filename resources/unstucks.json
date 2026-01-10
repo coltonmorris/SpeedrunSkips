@@ -1,6 +1,19 @@
 {
 "0":[
 	{
+      "x": 59.30,
+      "y": -13412.00,
+      "TODO": "im not sure why this one was missing from the list seargentfish made",
+      "TODO": "give this a better name",
+      "title": "Stranglethorn Vale, Outside Gurubashi Arena"
+    },
+	{
+      "x": "TODO",
+      "y": "TODO",
+      "TODO": "this is a special unstuck location that only teleports you here if you are inside the actual colloseum (not just inside the pvp zone)",
+      "title": "Stranglethorn Vale, Gurubashi Arena"
+    },
+	{
       "x": -682.64,
       "y": -11734.55,
       "title": "Stranglethorn Vale, Kurzen Camp"

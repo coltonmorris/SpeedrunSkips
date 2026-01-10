@@ -1,0 +1,10 @@
+    {
+      "x": -5287.337,
+      "y": 2116.78979,
+      "graveyard": 1,
+      "title": "Eastern Plaguelands, Light\\'s Hope Chapel"
+      "alternate_title": "Ebon Hold GY - Chapter IV"
+    },
+
+ok so our world safe locs is wotlk and it added some extra spots
+

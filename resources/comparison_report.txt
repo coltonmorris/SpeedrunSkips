@@ -1,0 +1,284 @@
+================================================================================
+DETAILED COMPARISON REPORT: WorldSafeLocs.csv vs gyClassic.json & unstucks.json
+Generated: 2025-12-29 23:02:14
+================================================================================
+
+SUMMARY STATISTICS
+--------------------------------------------------------------------------------
+WorldSafeLocs.csv entries: 80
+gyClassic.json entries: 76
+unstucks.json entries: 65
+
+COORDINATE SYSTEM ANALYSIS
+--------------------------------------------------------------------------------
+gyClassic.json: 45 entries match with swapped coords, 0 with normal coords
+unstucks.json: 12 entries match with swapped coords, 0 with normal coords
+
+CONCLUSION: Both JSON files use SWAPPED X/Y coordinates compared to WorldSafeLocs.csv
+(JSON X = CSV Y, JSON Y = CSV X)
+
+================================================================================
+gyClassic.json vs WorldSafeLocs.csv
+================================================================================
+
+Perfect matches (distance < 0.01): 45
+Close matches (0.01 <= distance < 10): 0
+Far matches (distance >= 10): 0
+Unmatched: 31
+
+PERFECT MATCHES (gyClassic.json):
+--------------------------------------------------------------------------------
+CSV ID   3: 'Darkshire, Duskwood                     ' = 'Duskwood, Darkshire                     '
+         CSV:  ( -10774.26,   -1189.67) | JSON: (  -1189.67,  -10774.26) | Swapped: True
+CSV ID   4: 'Sentinel Hill, Westfall                 ' = 'Westfall, Sentinel Hill                 '
+         CSV:  ( -10546.90,    1197.24) | JSON: (   1197.24,  -10546.90) | Swapped: True
+CSV ID   6: 'Thelsamar, Loch Modan                   ' = 'Loch Modan, Thelsamar                   '
+         CSV:  (  -5351.23,   -2881.58) | JSON: (  -2881.58,   -5351.23) | Swapped: True
+CSV ID   7: 'Crossroads, Wetlands                    ' = 'Wetlands, Crossroads                    '
+         CSV:  (  -3289.12,   -2435.99) | JSON: (  -2435.99,   -3289.12) | Swapped: True
+CSV ID  10: 'Crossroads, Barrens                     ' = 'The Barrens, The Crossroads             '
+         CSV:  (   -592.60,   -2523.49) | JSON: (  -2523.49,    -592.60) | Swapped: True
+CSV ID  31: 'Ghost Walker Post, Desolace             ' = 'Desolace, Ghost Walker Post             '
+         CSV:  (  -1443.49,    1973.37) | JSON: (   1973.37,   -1443.49) | Swapped: True
+CSV ID  34: 'Red Cloud Mesa, Mulgore                 ' = 'Mulgore, Red Cloud Mesa                 '
+         CSV:  (  -2944.56,    -153.22) | JSON: (   -153.22,   -2944.56) | Swapped: True
+CSV ID  35: 'Auberdine, Darkshore                    ' = 'Darkshore, Auberdine                    '
+         CSV:  (   6739.19,     209.99) | JSON: (    209.99,    6739.19) | Swapped: True
+CSV ID  36: 'Morgan's Plot, Deadwind Pass            ' = 'Deadwind Pass, Morgan\'s Plot           '
+         CSV:  ( -11110.38,   -1833.24) | JSON: (  -1833.24,  -11110.38) | Swapped: True
+CSV ID  39: 'Thousand Needles                        ' = 'Thousand Needles, The Great Lift        '
+         CSV:  (  -4656.00,   -1765.00) | JSON: (  -1765.00,   -4656.00) | Swapped: True
+CSV ID  70: 'Un'goro Trail, Silithus                 ' = 'Silithus, Valor\'s Rest                 '
+         CSV:  (  -6432.26,    -278.29) | JSON: (   -278.29,   -6432.26) | Swapped: True
+CSV ID  89: 'Bloodhoof Village, Mulgore              ' = 'Mulgore, Bloodhoof Village              '
+         CSV:  (  -2175.19,    -342.03) | JSON: (   -342.03,   -2175.19) | Swapped: True
+CSV ID  91: 'Dolanaar, Teldrassil                    ' = 'Teldrassil, Dolanaar                    '
+         CSV:  (   9701.25,     945.62) | JSON: (    945.62,    9701.25) | Swapped: True
+CSV ID  92: 'Astranaar, Ashenvale                    ' = 'Ashenvale, Astranaar                    '
+         CSV:  (   2633.41,    -629.74) | JSON: (   -629.74,    2633.41) | Swapped: True
+CSV ID  93: 'Aldrassil, Teldrassil                   ' = 'Teldrassil, Aldrassil                   '
+         CSV:  (  10384.81,     811.53) | JSON: (    811.53,   10384.81) | Swapped: True
+CSV ID  97: 'Sepulcher, Silverpine                   ' = 'Silverpine Forest, The Sepulcher        '
+         CSV:  (    516.19,    1589.81) | JSON: (   1589.81,     516.19) | Swapped: True
+CSV ID  98: 'Tarren Mill, Hillsbrad                  ' = 'Hillsbrad Foothills, Tarren Mill        '
+         CSV:  (    -18.68,    -981.17) | JSON: (   -981.17,     -18.68) | Swapped: True
+CSV ID  99: 'Arathi Highlands                        ' = 'Arathi Highlands                        '
+         CSV:  (  -1472.29,   -2617.96) | JSON: (  -2617.96,   -1472.29) | Swapped: True
+CSV ID 100: 'Anvilmar, Dun Morogh                    ' = 'Dun Morogh, Anvilmar                    '
+         CSV:  (  -6164.23,     336.32) | JSON: (    336.32,   -6164.23) | Swapped: True
+CSV ID 101: 'Kharanos, Dun Morogh                    ' = 'Dun Morogh, Kharanos                    '
+         CSV:  (  -5680.04,    -518.92) | JSON: (   -518.92,   -5680.04) | Swapped: True
+CSV ID 104: 'Lakeshire, Redridge                     ' = 'Redridge Mountains, Lakeshire           '
+         CSV:  (  -9403.25,   -2037.69) | JSON: (  -2037.69,   -9403.25) | Swapped: True
+CSV ID 105: 'Northshire, Elwynn                      ' = 'Elwynn Forest, Northshire               '
+         CSV:  (  -8935.33,    -188.65) | JSON: (   -188.65,   -8935.33) | Swapped: True
+CSV ID 106: 'Goldshire, Elwynn                       ' = 'Elwynn Forest, Goldshire                '
+         CSV:  (  -9339.46,     171.41) | JSON: (    171.41,   -9339.46) | Swapped: True
+CSV ID 108: 'Stonard, Swamp of Sorrows               ' = 'Swamp of Sorrows, Stonard               '
+         CSV:  ( -10567.81,   -3377.20) | JSON: (  -3377.20,  -10567.81) | Swapped: True
+CSV ID 109: 'Booty Bay, Stranglethorn                ' = 'Stranglethorn Vale, Booty Bay           '
+         CSV:  ( -14284.96,     288.45) | JSON: (    288.45,  -14284.96) | Swapped: True
+CSV ID 149: 'Southshore, Hillsbrad Foothills         ' = 'Hillsbrad Foothills, Southshore         '
+         CSV:  (   -732.80,    -592.50) | JSON: (   -592.50,    -732.80) | Swapped: True
+CSV ID 169: 'Valley of Trials, Durotar               ' = 'Durotar, Valley of Trials               '
+         CSV:  (   -634.63,   -4296.03) | JSON: (  -4296.03,    -634.63) | Swapped: True
+CSV ID 189: 'Theramore, Dustwallow Marsh             ' = 'Dustwallow Marsh, Theramore Isle        '
+         CSV:  (  -3525.71,   -4315.45) | JSON: (  -4315.45,   -3525.71) | Swapped: True
+CSV ID 209: 'Gadgetzan, Tanaris                      ' = 'Tanaris, Gadgetzan                      '
+         CSV:  (  -7190.95,   -3944.65) | JSON: (  -3944.65,   -7190.95) | Swapped: True
+CSV ID 309: 'Feathermoon, Feralas                    ' = 'Feralas, Feathermoon Stronghold         '
+         CSV:  (  -4596.40,    3229.43) | JSON: (   3229.43,   -4596.40) | Swapped: True
+CSV ID 310: 'Camp Mojache, Feralas                   ' = 'Feralas, Camp Mojache                   '
+         CSV:  (  -4439.97,     370.15) | JSON: (    370.15,   -4439.97) | Swapped: True
+CSV ID 329: 'Shimmering Flats, Thousand Needles      ' = 'Thousand Needles, Shimmering Flats      '
+         CSV:  (  -5530.28,   -3459.28) | JSON: (  -3459.28,   -5530.28) | Swapped: True
+CSV ID 349: 'Aerie Peak, The Hinterlands             ' = 'The Hinterlands, Aerie Peak             '
+         CSV:  (    323.51,   -2227.20) | JSON: (  -2227.20,     323.51) | Swapped: True
+CSV ID 369: 'Azshara                                 ' = 'Azshara, Talrendis Point                '
+         CSV:  (   2681.06,   -4009.75) | JSON: (  -4009.75,    2681.06) | Swapped: True
+CSV ID 370: 'Nethergarde, Blasted Lands              ' = 'Blasted Lands, Dreadmaul Hold           '
+         CSV:  ( -10846.57,   -2949.49) | JSON: (  -2949.49,  -10846.57) | Swapped: True
+CSV ID 389: 'Stranglethorn                           ' = 'Stranglethorn Vale, Northern Stranglethorn'
+         CSV:  ( -11542.56,    -228.64) | JSON: (   -228.64,  -11542.56) | Swapped: True
+CSV ID 449: 'Morlos'Aran, Felwood                    ' = 'Felwood, Morlos\'Aran                   '
+         CSV:  (   3806.54,   -1600.29) | JSON: (  -1600.29,    3806.54) | Swapped: True
+CSV ID 450: 'Un'Goro Crater                          ' = 'Un\'Goro Crater, The Marshlands         '
+         CSV:  (  -7205.56,   -2436.67) | JSON: (  -2436.67,   -7205.56) | Swapped: True
+CSV ID 469: 'Twilight Vale, Darkshore                ' = 'Darkshore, Twilight Vale                '
+         CSV:  (   4291.28,      96.96) | JSON: (     96.96,    4291.28) | Swapped: True
+CSV ID 509: 'Western Plaguelands, Alliance           ' = 'Western Plaguelands, Chillwind Camp     '
+         CSV:  (    908.32,   -1520.29) | JSON: (  -1520.29,     908.32) | Swapped: True
+CSV ID 510: 'Death Pit, Eastern Plaguelands          ' = 'Eastern Plaguelands, Light\'s Hope Chapel'
+         CSV:  (   2116.79,   -5287.34) | JSON: (  -5287.34,    2116.79) | Swapped: True
+CSV ID 512: 'Kargathia, Ashenvale                    ' = 'Ashenvale, Kargathia                    '
+         CSV:  (   2421.72,   -2953.62) | JSON: (  -2953.62,    2421.72) | Swapped: True
+CSV ID 569: 'Bulwark, Western Plaguelands            ' = 'Western Plaguelands, Bulwark            '
+         CSV:  (   1750.34,    -669.79) | JSON: (   -669.79,    1750.34) | Swapped: True
+CSV ID 609: 'Southridge Beach, Azshara               ' = 'Azshara, Southridge Beach               '
+         CSV:  (   2942.76,   -6037.13) | JSON: (  -6037.13,    2942.76) | Swapped: True
+CSV ID 632: 'Flame Crest, Burning Steppes            ' = 'Burning Steppes, Flame Crest            '
+         CSV:  (  -7490.45,   -2132.62) | JSON: (  -2132.62,   -7490.45) | Swapped: True
+
+UNMATCHED ENTRIES FROM gyClassic.json (31):
+--------------------------------------------------------------------------------
+  'Badlands, Graveyard NE                            ' at (  -3493.11,   -6289.91) on continent 0
+  'Badlands, Kargath                                 ' at (  -2287.19,   -6805.00) on continent 0
+  'Dun Morogh, Gates of Ironforge                    ' at (   -874.66,   -5165.52) on continent 0
+  'Duskwood, Ravenhill                               ' at (    294.05,  -10606.80) on continent 0
+  'Eastern Plaguelands, Blackwood Lake               ' at (  -4014.39,    2647.55) on continent 0
+  'Eastern Plaguelands, Darrowshire                  ' at (  -3701.00,    1392.00) on continent 0
+  'Eastern Plaguelands, Graveyard CG Tower           ' at (  -3655.89,    1978.47) on continent 0
+  'Elwynn Forest, Eastvale Logging Camp              ' at (  -1374.05,   -9552.46) on continent 0
+  'Searing Gorge, Thorium Point                      ' at (  -1113.51,   -6450.61) on continent 0
+  'The Hinterlands, The Overlook Cliffs              ' at (  -4374.00,    -291.00) on continent 0
+  'Tirisfal Glades, Brill                            ' at (    492.03,    2348.67) on continent 0
+  'Tirisfal Glades, Deathknell                       ' at (   1629.11,    1882.94) on continent 0
+  'Tirisfal Glades, Faol\'s Rest                     ' at (   -543.39,    2604.52) on continent 0
+  'Tirisfal Glades, Ruins of Lordaeron               ' at (    221.76,    1780.11) on continent 0
+  'Western Plaguelands, Caer Darrow                  ' at (  -2411.99,    1236.89) on continent 0
+  'Wetlands, Baradin Bay                             ' at (   -856.71,   -3347.72) on continent 0
+  'Azshara, Legash Encampment                        ' at (  -6845.00,    4788.78) on continent 1
+  'Durotar, Northern Durotar                         ' at (  -4464.24,    1177.78) on continent 1
+  'Durotar, Razor Hill                               ' at (  -4793.73,     233.46) on continent 1
+  'Durotar, Sen\'jin Village                         ' at (  -4985.00,    -778.00) on continent 1
+  'Dustwallow Marsh, Brackenwall Village             ' at (  -3046.94,   -3127.69) on continent 1
+  'Felwood, Irontree Woods                           ' at (  -1217.75,    5935.47) on continent 1
+  'Feralas, Dire Maul                                ' at (   1632.08,   -4590.41) on continent 1
+  'Moonglade                                         ' at (  -2809.00,    7426.00) on continent 1
+  'Silithus, Cenarion Hold                           ' at (    891.44,   -6831.32) on continent 1
+  'Silithus, Scarab Wall (AQ Only)                   ' at (   1557.80,   -7991.57) on continent 1
+  'Stonetalon Mountains, Webwinder Path              ' at (    434.53,     898.26) on continent 1
+  'Teldrassil, Darnassus                             ' at (   2117.12,   10054.30) on continent 1
+  'The Barrens, Camp Taurajo                         ' at (  -1972.64,   -2517.75) on continent 1
+  'The Barrens, Ratchet                              ' at (  -3478.68,   -1081.40) on continent 1
+  'Winterspring, Everlook                            ' at (  -4661.54,    6875.76) on continent 1
+
+================================================================================
+unstucks.json vs WorldSafeLocs.csv
+================================================================================
+
+Perfect matches (distance < 0.01): 12
+Close matches (0.01 <= distance < 10): 0
+Far matches (distance >= 10): 0
+Unmatched: 53
+
+PERFECT MATCHES (unstucks.json):
+--------------------------------------------------------------------------------
+CSV ID   1: 'Stormwind                               ' = 'Stormwind                               '
+         CSV:  (  -9115.00,     423.00) | JSON: (    423.00,   -9115.00) | Swapped: True
+CSV ID   2: 'Redridge                                ' = 'Redridge Mountains                      '
+         CSV:  (  -9271.00,   -2305.00) | JSON: (  -2305.00,   -9271.00) | Swapped: True
+CSV ID  33: 'Orgrimmar, Durotar                      ' = 'Durotar, Orgrimmar                      '
+         CSV:  (   1357.10,   -4412.01) | JSON: (  -4412.01,    1357.10) | Swapped: True
+CSV ID  49: 'Plains of Snow - Horde Start            ' = 'Plains of Snow - Horde Start            '
+         CSV:  (   -661.53,    -485.31) | JSON: (   -485.31,    -661.53) | Swapped: True
+CSV ID  96: 'Undercity, Tirisfal                     ' = 'Tirisfal Glades, Undercity              '
+         CSV:  (   1822.61,     214.67) | JSON: (    214.67,    1822.61) | Swapped: True
+CSV ID 102: 'Ironforge, Dun Morogh                   ' = 'Dun Morogh, Ironforge                   '
+         CSV:  (  -5049.45,    -809.70) | JSON: (   -809.70,   -5049.45) | Swapped: True
+CSV ID 107: 'Stormwind, Elwynn                       ' = 'Elwynn Forest, Stormwind                '
+         CSV:  (  -9151.98,     410.94) | JSON: (    410.94,   -9151.98) | Swapped: True
+CSV ID 129: 'Rut'theran Village                      ' = 'Teldrassil, Rut\'theran Village         '
+         CSV:  (   8706.00,     965.00) | JSON: (    965.00,    8706.00) | Swapped: True
+CSV ID 269: 'Plains of Snow - Alliance Start         ' = 'Plains of Snow - Alliance Start         '
+         CSV:  (   -448.19,   -1027.86) | JSON: (  -1027.86,    -448.19) | Swapped: True
+CSV ID 529: 'Programmer Isle                         ' = 'Programmer Isle                         '
+         CSV:  (  16310.33,   16268.94) | JSON: (  16268.94,   16310.33) | Swapped: True
+CSV ID 549: 'Programmer Isle                         ' = 'Programmer Isle                         '
+         CSV:  (  16223.82,   16278.57) | JSON: (  16278.57,   16223.82) | Swapped: True
+CSV ID 589: 'Un'goro Trail, Silithus                 ' = 'GM Island                               '
+         CSV:  (  16310.33,   16268.94) | JSON: (  16268.94,   16310.33) | Swapped: True
+
+UNMATCHED ENTRIES FROM unstucks.json (53):
+--------------------------------------------------------------------------------
+  'Alterac Valley, Alliance Exit                     ' at (   -184.93,     101.14) on continent 0
+  'Alterac Valley, Horde Exit                        ' at (  -1085.72,     536.50) on continent 0
+  'Arathi Basin - Alliance Exit                      ' at (  -2531.75,   -1215.59) on continent 0
+  'Arathi Basin - Horde Exit                         ' at (  -3518.52,    -831.88) on continent 0
+  'Blasted Lands, Kazzak                             ' at (  -2746.50,  -11803.80) on continent 0
+  'Blasted Lands, Kazzak Portal                      ' at (  -2826.22,  -11783.40) on continent 0
+  'Blasted Lands, Razelikh                           ' at (  -2836.27,  -11234.43) on continent 0
+  'Duskwood, Twilight Grove                          ' at (   -459.97,  -10539.27) on continent 0
+  'Duskwood, Watcher Camp                            ' at (   -376.27,  -10929.87) on continent 0
+  'Hinterlands, Emerald Portal                       ' at (  -3908.50,     476.80) on continent 0
+  'Stranglethorn Vale, Kurzen Camp                   ' at (   -682.64,  -11734.55) on continent 0
+  'Stranglethorn Vale, Mistvale Valley               ' at (     70.35,  -13823.35) on continent 0
+  'Stranglethorn Vale, Moshogg                       ' at (   -823.02,   -1223.67) on continent 0
+  'Stranglethorn Vale, Teleporter                    ' at (    465.99,  -14461.47) on continent 0
+  'Stranglethorn Vale, Ziatajai Ruins                ' at (   -267.85,  -13121.41) on continent 0
+  'Swamp of Sorrows, Sunken Temple                   ' at (  -3993.90,  -10226.30) on continent 0
+  'Ashenvale, Battle 1                               ' at (    423.20,    3589.52) on continent 1
+  'Ashenvale, Battle 2                               ' at (     47.27,    4050.23) on continent 1
+  'Ashenvale, Battle 3                               ' at (  -1275.60,    2239.82) on continent 1
+  'Ashenvale, Bough Shadow                           ' at (  -3674.53,    3050.85) on continent 1
+  'Ashenvale, Demon Fall Canyon                      ' at (  -3173.00,    1836.00) on continent 1
+  'Ashenvale, Warsong Lumber Camp                    ' at (  -3157.30,    2487.00) on continent 1
+  'Azshara, Azuregos Portal                          ' at (  -5462.61,    2531.85) on continent 1
+  'Felwood, Jaedenar                                 ' at (   -393.66,    4886.00) on continent 1
+  'Feralas, Ruins of Ravenwind                       ' at (  -2382.70,   -2709.30) on continent 1
+  'Mulgore, Thunder Bluff                            ' at (    -74.65,    -981.92) on continent 1
+  'Warsong Gulch - Alliance Exit Loc                 ' at (  -1858.67,    1459.17) on continent 1
+  'Warsong Gulch - Horde Exit Loc                    ' at (  -2104.28,    1035.27) on continent 1
+  'Alterac Valley, Alliance Safe                     ' at (   -491.28,     873.00) on continent 30
+  'Alterac Valley, Frostwolf Graveyard (Lo)          ' at (   -253.31,   -1090.48) on continent 30
+  'Alterac Valley, Frostwolf Relief Hut (H-base)     ' at (   -333.34,   -1496.07) on continent 30
+  'Alterac Valley, Horde Safe                        ' at (   -619.25,    -818.56) on continent 30
+  'Alterac Valley, PvP Alliance Choke Graveyard (A-choke)' at (   -496.43,      73.42) on continent 30
+  'Alterac Valley, PvP Horde Choke Graveyard (H-choke)' at (   -405.23,    -531.22) on continent 30
+  'Alterac Valley, Snowfall Graveyard (Mid)          ' at (     31.21,    -157.41) on continent 30
+  'Alterac Valley, Stormpike Aid Station (A-base)    ' at (     44.00,     643.00) on continent 30
+  'Alterac Valley, Stormpike Graveyard (Hi)          ' at (   -374.00,     676.00) on continent 30
+  'Programmer Isle, Bucklers Cemetery 1              ' at (  16622.70,   16620.74) on continent 451
+  'Programmer Isle, Bucklers Cemetery 2              ' at (  16662.98,   16614.81) on continent 451
+  'Programmer Isle, Bucklers Cemetery 3              ' at (  16577.46,   16619.52) on continent 451
+  'Warsong Gulch - Alliance Enter Loc                ' at (   1481.87,    1519.53) on continent 489
+  'Warsong Gulch - Alliance Rez Loc                  ' at (   1554.79,    1415.33) on continent 489
+  'Warsong Gulch - Horde Enter Loc                   ' at (   1433.72,     933.33) on continent 489
+  'Warsong Gulch - Horde Rez Loc                     ' at (   1387.49,    1029.14) on continent 489
+  'Arathi Basin - Alliance Entrance                  ' at (   1310.74,    1313.90) on continent 529
+  'Arathi Basin - Graveyard, A-Base (Trollbane Hall) ' at (   1270.27,    1354.70) on continent 529
+  'Arathi Basin - Graveyard, A-Mid (Stables)         ' at (   1163.13,    1201.87) on continent 529
+  'Arathi Basin - Graveyard, ALT-N (Gold Mine)       ' at (    781.56,    1211.52) on continent 529
+  'Arathi Basin - Graveyard, ALT-S (Lumber Mill)     ' at (   1213.11,     772.76) on continent 529
+  'Arathi Basin - Graveyard, H-Base (Defiler\'s Den) ' at (    638.36,     713.71) on continent 529
+  'Arathi Basin - Graveyard, H-Mid (Farm)            ' at (    784.98,     834.73) on continent 529
+  'Arathi Basin - Graveyard, Mid (Blacksmith)        ' at (    955.18,    1016.59) on continent 529
+  'Arathi Basin - Horde Entrance                     ' at (    681.22,     684.01) on continent 529
+
+================================================================================
+CSV ENTRIES NOT FOUND IN EITHER JSON FILE (23)
+================================================================================
+
+ID   5: 'Dun Morogh                                        ' at (  -5687.00,    -515.00, 398.00) on continent 0
+ID   8: 'Stranglethorn Arena                               ' at ( -13290.00,     108.00,  25.00) on continent 0
+ID  32: 'Razor Hill, Durotar                               ' at (    238.03,   -4792.52,  10.21) on continent 1
+ID  90: 'Darnassus, Teldrassil                             ' at (   9931.99,    2193.67, 1328.67) on continent 1
+ID  94: 'Deathknell, Tirisfal                              ' at (   1880.74,    1624.73,  94.43) on continent 0
+ID 103: 'Kargath, Badlands                                 ' at (  -6808.38,   -2286.17, 280.75) on continent 0
+ID 229: 'Taurajo, Barrens                                  ' at (  -2515.99,   -1966.48,  91.78) on continent 1
+ID 249: 'Ratchet, Barrens                                  ' at (  -1072.59,   -3481.85,  62.70) on continent 1
+ID 289: 'Brill, Tirisfal                                   ' at (   2349.61,     485.21,  33.37) on continent 0
+ID 409: 'Stonetalon Mountains                              ' at (    899.10,     437.56,  65.74) on continent 1
+ID 429: 'Faol's Rest, Tirisfal Glades                      ' at (   2603.31,    -534.66,  89.00) on continent 0
+ID 489: 'Menethil, Wetlands                                ' at (  -3349.70,    -857.47,   1.06) on continent 0
+ID 511: 'Everlook, Winterspring                            ' at (   6858.56,   -4663.24, 701.36) on continent 1
+ID 610: 'Alterac Valley, Horde                             ' at (   -894.12,    -360.92,  48.88) on continent 30
+ID 611: 'Alterac Valley, Alliance                          ' at (    690.80,    -489.16,  76.38) on continent 30
+ID 629: 'TEST                                              ' at (    908.32,   -1520.29,  55.04) on continent 0
+ID 630: 'Legash Encampment, Azshara                        ' at (   4679.34,   -6703.70, 128.37) on continent 1
+ID 631: 'Brackenwall Village, Dustwallow Marsh             ' at (  -3135.92,   -3047.60,  34.46) on continent 1
+ID 633: 'Moonglade                                         ' at (   7417.32,   -2825.43, 459.19) on continent 1
+ID 634: 'Darrowshire, Eastern Plaguelands                  ' at (   1404.88,   -3700.73,  75.96) on continent 0
+ID 635: 'Irontree Woods, Felwood                           ' at (   5977.42,   -1214.31, 379.39) on continent 1
+ID 636: 'Firewatch Ridge, Searing Gorge                    ' at (  -6446.00,   -1116.00, 311.99) on continent 0
+ID 649: 'Sen'jin Village, Durotar                          ' at (   -742.00,   -4962.00,  23.00) on continent 1
+
+================================================================================
+CROSS-REFERENCE: Entries appearing in multiple sources
+================================================================================
+
+No CSV entries are matched by both JSON files.
+
+================================================================================
+END OF REPORT
+================================================================================
